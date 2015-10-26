@@ -31,7 +31,7 @@
 		<div id="intro" class="page">
 			<div class="logo">
 			</div>
-			<div class="name">Forritunarkeppni Grunnskólanna</div>
+			<div class="name">FORRITUNARKEPPNI GRUNNSKÓLANNA</div>
 		</div>
 
 		<div class="parallax firstImage">
@@ -177,8 +177,18 @@
 	        	<!-- Takki sem triggerað JS -->
 			</div>
 		</div>
+		<footer>
+			<div class="footerContainer">
+				<span class="footThing footName">Tækniskólinn / Skóli atvinnulífsins</span>
+				<span class="footThing footAddress">Skólavörðuholti 101 Reykjavík </span>
+				<span class="footThing footEmail">tskoli@tskoli.is</span>
+				<span class="footThing footPhone">Sími: 514 9000</span>
+				<span class="footThing footUUID">kt: 531202-3410</span>
+				<span class="footThing footFacebook "><a href="http://facebook.com"><i class="fa fa-facebook-official fa-3x"></i></a></span>
+			</div>
+		</footer>
 	</div>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/j.js"></script>
 	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script>
 	function fixSpacers () {
@@ -220,9 +230,11 @@
 		$(".navBar").slideToggle('fast');
 	});
 	//tek í burtu dropdown þegar að smellt er á eitthvern link
-	$(".navItem").on('click', function() {
-		$(".navBar").slideToggle('fast');
-	});
+	if (window.innerHeight < 900) {
+		$(".navItem").on('click', function() {
+			$(".navBar").slideToggle('fast');
+		});
+	};
 	//Stilli hæðina á efsta elementinu
 	var navHeight = $('.navTrigger').height();
 	var pushDown = $('.pushPageDown');

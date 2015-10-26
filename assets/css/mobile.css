@@ -3,6 +3,7 @@
 @font-face {font-family: robotoLight;src: url(../fonts/roboto/Roboto-Light.ttf);}
 @font-face {font-family: geometos;src: url(../fonts/geometos/Geometos.ttf);}
 @font-face {font-family: openSans;src: url(../fonts/openSans/OpenSans-Regular.ttf);}
+@font-face {font-family: digital;src: url(../fonts/digitalDisgust/getdigital.ttf);}
 .navTrigger{
 	background-color: #0DA45D;
 	color:white;
@@ -81,8 +82,8 @@
 }
 .name{
 	text-align: center;
-	font-size: 2em;
-	font-family: geometos;
+	font-size: 3em;
+	font-family: digital;
 	margin:100px 0;
 }
 .title{
@@ -209,4 +210,20 @@ input[type="radio"]:checked + label span {
 
 :-ms-input-placeholder {  
    color: #DCDCDC;  
+}
+.footThing{
+	display: block;
+	text-align: center;
+	padding-bottom:1em;
+}
+.footerContainer{
+	font-family: robotoLight;
+}
+footer{
+	padding-top:1em;
+	background-color: black;
+	color:white;
+}
+a:visited{
+	color:white;
 }

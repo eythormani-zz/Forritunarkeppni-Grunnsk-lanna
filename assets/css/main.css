@@ -3,6 +3,8 @@
 @font-face {font-family: robotoLight;src: url(../fonts/roboto/Roboto-Light.ttf);}
 @font-face {font-family: geometos;src: url(../fonts/geometos/Geometos.ttf);}
 @font-face {font-family: openSans;src: url(../fonts/openSans/OpenSans-Regular.ttf);}
+@font-face {font-family: digital;src: url(../fonts/digitalDisgust/getdigital.ttf);}
+
 body {
     color: #111;
 }
@@ -105,8 +107,8 @@ body {
 }
 .name{
 	text-align: center;
-	font-size: 4em;
-	font-family: geometos;
+	font-size: 5em;
+	font-family: digital;
 }
 .title{
 	padding-top: 2%;
@@ -216,7 +218,8 @@ input[type="radio"]:checked + label span {
 	color:white;
 	font-family: robotoLight;
 	margin:2%;
-	display: block;
+	display: flex;
+	justify-content:space-around;
 }
 .radioContainer{
 	display: inline-block;
@@ -266,4 +269,20 @@ input[type="radio"]:checked + label span {
 }
 .fourthImage{
 	background-image: url(../img/4.jpg);	
+}
+.footThing{
+	display: block;
+	text-align: center;
+	padding-bottom:1em;
+}
+.footerContainer{
+	font-family: robotoLight;
+}
+footer{
+	padding-top:1em;
+	background-color: black;
+	color:white;
+}
+a:visited{
+	color:white;
 }
