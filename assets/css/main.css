@@ -3,6 +3,15 @@
 @font-face {font-family: robotoLight;src: url(../fonts/roboto/Roboto-Light.ttf);}
 @font-face {font-family: geometos;src: url(../fonts/geometos/Geometos.ttf);}
 @font-face {font-family: openSans;src: url(../fonts/openSans/OpenSans-Regular.ttf);}
+body {
+    color: #111;
+}
+.navTrigger{
+	display: none;
+}
+.pushPageDown{
+	display: none;
+}
 /*Læt nav barinn vera kyrran efst og ná yfir allan skjáinn*/
 .navBar{
 	position: fixed;
@@ -22,7 +31,7 @@
 }
 /*stilli stýla á navlinkum*/
 .navLink{
-	color:#39A0ED;
+	color:#0DA45D;
 	padding: 20px 0;
 	text-align: center;
 	display: block;
@@ -34,49 +43,66 @@
 	transition:border 0.3s;
 }
 .navLink:hover{
-	border-bottom: 3px solid rgba(6,119,205, 1);
-	color:rgba(6,119,205, 1);
-	background-color: rgba(6,119,205, 0.07);
+	border-bottom: 3px solid rgba(13, 164, 93, 1);
+	color:rgba(13, 164, 93, 1);
+	background-color: rgba(13, 164, 93, 0.07);
 }
 .navItem{
 	display: inline-block;
 }
 /*Set hæð hverrar síðu sem fulla hæð sjáins. Þetta fokkar upp í símum, mun laga það seinna*/
 .page{
-	height: 100vh;
+    min-height:100%;
+	min-height: 100vh;
+    padding: 0 0 30px 0;
 }
-
-
 /*Block sem sér um að stíla mismunadi síðurnar*/
 #intro{
 	display: flex;
     flex-direction: column;
-    justify-content: center;
-	color:#39A0ED;
+	color:#0DA45D;
+    padding-top: 70px;
+    background-color: white;
 }
 #about{
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	color:white;
 }
 .about{
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	color:white;
 }
-.rules{
-	color:#39A0ED;
+#more{
+	background-color: white;
+}
+.more{
+	background-color: white;
+	color:#0DA45D;
+	min-height: 0vh;
 }
 #preperation{
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 }
 .preperation{
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	color:white;
 }
+#signup{
+	background-color: white;
+}
 .signup{
-	color:#39A0ED;
+	background-color: white;
+    padding: 0 0 30px 0;
+	color:#0DA45D;
 }
 /*Síðublock lokið*/
 /*Stýlar fyrir aðal nafnið*/
+.logo{
+    width: 600px;
+    display: block;
+    margin: 50px auto 0;
+	content: url(../img/logo-small.png);
+}
 .name{
 	text-align: center;
 	font-size: 4em;
@@ -88,17 +114,13 @@
 	font-size: 2em;
 	font-family: geometos
 }
-
-@media only screen and (max-width:810px) { 
-	/*Góður staður fyrir breakpoint*/
-}
 /*Hérna koma stýlar eingögnu fyrir formið*/
 .form-input{
 	display: block;
 	width:96%;
 	border:0;
 	font-size: 1.5em;
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	padding:2%;
 	color:white;
 	font-family: robotoLight;
@@ -116,20 +138,20 @@
 	display: block;
 	border:0;
 	font-size: 1.5em;
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	padding:2%;
 	color:white;
 	font-family: robotoLight;
 	margin:2%;
 }
 #go:hover{
-	background-color: #0677CD;
+	background-color: #058045;
 }
 #go:focus{
 	outline: 0;
 }
 #go:active{
-	background-color: #034273;
+	background-color: #006434;
 }
 /*Stýlar sem sjá um að breyta litnum á placeholder texta*/
 ::-webkit-input-placeholder {
@@ -189,28 +211,59 @@ input[type="radio"]:checked + label span {
 	width:96%;
 	border:0;
 	font-size: 1em;
-	background-color: #39A0ED;
+	background-color: #0DA45D;
 	padding:2%;
 	color:white;
 	font-family: robotoLight;
 	margin:2%;
-	display: flex;
-	justify-content:space-around;
+	display: block;
 }
 .radioContainer{
 	display: inline-block;
 }
 
 /*Hér eru sér stýlar fyrir efni á síðuni*/
-.contentContainer{ /**/
+.contentContainer{
 	width:800px;
 	margin:2% auto 0;
 	font-family: openSans;
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+.contentContainer p {
+    margin-top: 10px;
+}
 .important{
-	color: black;
+	color: #333;
 	/*font-style: italic;*/
 	/*text-decoration: underline;*/
+}
+
+
+@media (screen and max-height: 720px) {
+    .page {
+        height: 100%;
+    }
+}
+
+
+/*Stýlar fyrir parallax eins og ég held að gugga rand vill hafa það*/
+.parallax{
+	height: 30vh;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+}
+.firstImage{
+	/*disgusting cringe kóðamynd, notar meira að segja deprecated php functions, top kek*/
+	background-image: url(../img/1.jpg);
+}
+.secondImage{
+	background-image: url(../img/2.jpg);
+}
+.thirdImage{
+	background-image: url(../img/3.jpg);
+}
+.fourthImage{
+	background-image: url(../img/4.jpg);	
 }

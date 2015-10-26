@@ -1,0 +1,212 @@
+/*Tek inn öll fontin*/
+@font-face {font-family: roboto;src: url(../fonts/roboto/Roboto-Regular.ttf);}
+@font-face {font-family: robotoLight;src: url(../fonts/roboto/Roboto-Light.ttf);}
+@font-face {font-family: geometos;src: url(../fonts/geometos/Geometos.ttf);}
+@font-face {font-family: openSans;src: url(../fonts/openSans/OpenSans-Regular.ttf);}
+.navTrigger{
+	background-color: #0DA45D;
+	color:white;
+	position: fixed;
+	width:100%;
+}
+.navTrigger .navText{
+	font-family: roboto;
+	font-size: 2em;
+	display: inline-block;
+	margin:4%;
+}
+.navIcon{
+	float: right;
+	padding-right:2%;
+}
+.navIcon:hover{
+	cursor: pointer;
+}
+.navLogo{
+	max-height:45px;
+	content: url(../img/logo-small.png);
+}
+.navBar{
+	display: none;
+	position: fixed;
+	background-color: #0DA45D;
+	width:100%;
+}
+.navItem{
+	font-family: robotoLight;
+	color:white;
+	padding: 4%;
+	border-bottom:1px solid white;
+}
+.firstItem{
+	border-top: 1px solid white;
+}
+#intro{
+	display: flex;
+    flex-direction: column;
+	color:#0DA45D;
+    background-color: white;
+}
+#about{
+	background-color: #0DA45D;
+	color:white;
+}
+.about{
+	background-color: #0DA45D;
+	color:white;
+}
+#more{
+	background-color: white;
+}
+.more{
+	background-color: white;
+	color:#0DA45D;
+	min-height: 0vh;
+}
+#preperation{
+	background-color: #0DA45D;
+}
+.preperation{
+	background-color: #0DA45D;
+	color:white;
+}
+#signup{
+	background-color: white;
+}
+.signup{
+	background-color: white;
+    padding: 0 0 30px 0;
+	color:#0DA45D;
+	/*min-height: 100vh;*/
+}
+.name{
+	text-align: center;
+	font-size: 2em;
+	font-family: geometos;
+	margin:100px 0;
+}
+.title{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: geometos
+}
+.contentContainer{
+	padding: 0 4%;
+	margin:0 auto;
+	font-family: openSans;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+.contentContainer p {
+    padding:10px 0;
+}
+a{
+	text-decoration: none;
+}
+
+/*Stýlar fyrir form*/
+.form-input{
+	display: block;	
+	width:90%;
+	margin: 0 auto;
+	border:0;
+	background-color: #0DA45D;
+	font-size: 1.5em;
+	margin:2%;
+	padding: 2%;
+	font-family: robotoLight;
+	color: white;
+}
+.form-input:focus{
+	outline: 0;
+}
+
+#go{
+	margin:0 2%;
+	display: block;
+	border:0;
+	font-size: 1.5em;
+	background-color: #0DA45D;
+	padding:2%;
+	color:white;
+	font-family: robotoLight;
+	margin:2%;
+}
+#go:hover{
+	background-color: #058045;
+}
+#go:focus{
+	outline: 0;
+}
+#go:active{
+	background-color: #006434;
+}
+/*Custom radio buttons eru versta krabbameinið*/
+input[type="radio"] {
+  display: none;
+}
+/*Hide-a alla radio takka*/
+input[type="radio"] + label {
+  font-family: robotoLight;
+  font-size: 1.5em;
+}
+/*stýlar fyrir labels á radio tökkum*/
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/*Færi span tagið yfir radio takkan*/
+input[type="radio"] + label span {
+  background-color: #DCDCDC;
+}
+/*stilli default bakrunnslit á radio tökkum*/
+input[type="radio"]:checked + label span {
+  background-color: white;
+  color:white;
+}
+/*Stilli stýla á cheked radio takka*/
+
+/*Þetta eru meiri stýlar fyrir radiotakka*/
+.labelControl{
+	display: inline-block;
+	color:#DCDCDC;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+.radioContainerContainer{
+	display: block;
+	width:90%;
+	border:0;
+	font-size: 1em;
+	background-color: #0DA45D;
+	padding:2%;
+	color:white;
+	font-family: robotoLight;
+	margin:2%;
+	display: block;
+}
+.radioContainer{
+	display: block;
+}
+/*Stýlar sem sjá um að breyta litnum á placeholder texta*/
+::-webkit-input-placeholder {
+   color: #DCDCDC;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #DCDCDC;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #DCDCDC;  
+}
+
+:-ms-input-placeholder {  
+   color: #DCDCDC;  
+}
